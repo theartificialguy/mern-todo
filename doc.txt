@@ -1,0 +1,9 @@
+// A MERN AUTH app with JWT & HTTP-only-cookie Authentication (creates a JWT token & saves it in HTTP-only-cookie)
+// ALL BACKEND ROUTES
+
+--> /api/users/** -> User ROUTES
+    **POST /api/users/register -> register a user and get token
+    **POST /api/users/login -> login an existing user & get token
+    **POST /api/users/logout -> logout a user & clear cookie
+    **GET /api/users/profile -> get user profile
+    **PUT /api/users/profile -> update user profile
