@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { MdLogin } from "react-icons/md";
 
@@ -16,17 +17,23 @@ const Header = () => {
         {/* <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/">Products</a> */}
-        <h1 className="text-xl text-black font-bold">MERN App</h1>
+        <Link to={"/"}>
+          <h1 className="text-xl text-black font-bold">MERN App</h1>
+        </Link>
       </nav>
 
       {/* right section */}
       <nav className="flex items-center space-x-12">
-        <IconButton text="Login" Icon={MdLogin} onClick={onLoginPressed} />
-        <IconButton
-          text="Register"
-          Icon={MdLogin}
-          onClick={onRegisterPressed}
-        />
+        <Link to={"/login"}>
+          <IconButton text="Login" Icon={MdLogin} onClick={onLoginPressed} />
+        </Link>
+        <Link to={"/register"}>
+          <IconButton
+            text="Register"
+            Icon={MdLogin}
+            onClick={onRegisterPressed}
+          />
+        </Link>
       </nav>
     </header>
   );
