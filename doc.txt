@@ -1,7 +1,11 @@
-// A MERN AUTH app with JWT & HTTP-only-cookie Authentication (creates a JWT token & saves it in HTTP-only-cookie)
-// Advantage of HTTP-only-cookie => no need to pass/attach jwt in req header everytime & get from localstorage
-// ALL BACKEND ROUTES
+# A MERN AUTH app with JWT & HTTP-only-cookie Authentication (creates a JWT token & saves it in HTTP-only-cookie)
+# Advantage of HTTP-only-cookie => no need to pass/attach jwt in req header everytime & get from localstorage
 
+# RUN PROJECT with 1 command using concurrently lib => npm run dev
+# RUN ONLY FRONTEND => npm run client (while being in parent dir)
+# RUN ONLY SERVER => npm run server (while being in parent dir)
+
+# ALL BACKEND ROUTES
 --> /api/users/** -> User ROUTES
     **POST /api/users/register -> register a user and get token
     **POST /api/users/login -> login an existing user & get token
