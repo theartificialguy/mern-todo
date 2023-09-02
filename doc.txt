@@ -1,4 +1,5 @@
 // A MERN AUTH app with JWT & HTTP-only-cookie Authentication (creates a JWT token & saves it in HTTP-only-cookie)
+// Advantage of HTTP-only-cookie => no need to pass/attach jwt in req header everytime & get from localstorage
 // ALL BACKEND ROUTES
 
 --> /api/users/** -> User ROUTES
